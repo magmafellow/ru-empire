@@ -20,6 +20,8 @@ const config: Config = {
         light: '#C57D7D',  // light red (contrast for bg)
         yel: '#FFD700', // yellow
         gr: "#D1D1D1", // gray
+        bl: "#000000", // black
+        bs: "#D1D1D1", // base text
         blHalf: "#0000006e", // transparent black ±30%
       },
     },
