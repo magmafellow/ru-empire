@@ -40,7 +40,7 @@ body {
 
 @font-face {
   font-family: "express";
-  src: url('http://localhost:3000/fonts/KJV1611.otf');
+  src: url('/fonts/KJV1611.otf');
 }
 
 .expressive {
