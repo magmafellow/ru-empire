@@ -4,7 +4,7 @@ import BurgerMenu from '@/app/ui/burger-menu'
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center h-[132px]">
+    <header className="header flex justify-between items-center h-[100px] md:h-[132px]">
       <Link href="/">
         <GiEagleEmblem
           className="text-gr hover:text-wh transition"

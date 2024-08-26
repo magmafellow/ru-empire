@@ -19,7 +19,7 @@ export default function BurgerMenu() {
     <>
       <div
         id="burger-menu"
-        className="cursor-pointer z-10 w-10 h-10 flex items-center justify-center flex-col gap-1.5 sm:hidden"
+        className="cursor-pointer relative right-2 z-40 w-10 h-10 flex items-center justify-center flex-col gap-1.5 sm:hidden"
         onClick={onBurgerClickHandler}
       >
         <span className="transition-all w-full h-[3px] bg-wh rounded-[3px]"></span>
@@ -28,9 +28,9 @@ export default function BurgerMenu() {
       </div>
       <div
         id="burger-wrapper"
-        className="absolute pt-20 pb-8 px-4 -right-full w-full h-full top-0 bg-blHalf transition-all"
+        className="absolute pt-20 pb-8 px-4 -right-full w-full h-full top-0 z-30 bg-bl bg-opacity-95 transition-all duration-300"
       >
-        <div className="w-full h-full rounded-xl">
+        <div className="w-full h-full text-wh">
           <div className="pr-20 text-right expressive">
             <div className="mb-10">
               <Link className="text-2xl px-2 py-1" href="#">

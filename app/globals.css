@@ -47,7 +47,7 @@ body {
   font-family: "express", Arial, sans-serif;
 }
 
-
+/* burger menu */
 .activated-wrapper {
   @apply right-0;
 }
@@ -74,7 +74,53 @@ body {
   display: none;
 }
 
-
+/* it is used to lock scrolling in burger menu */
 html.lock {
   overflow: hidden;
 }
+
+
+/* burger menu */
+
+/* accordion */
+.accordion-container .accordion-secret {
+  display: none;
+  position: relative;
+}
+.accordion-container.active-initial .accordion-secret {
+  display: flex;
+}
+
+.accordion-container svg {
+  transition: 0.2s;
+}
+.accordion-container.activated svg {
+  transform: rotate(180deg)
+}
+
+.accordion-container .imgBox, .accordion-container .textBox {
+  transition: 0.7s;
+  position: relative;
+}
+.accordion-container .imgBox {
+  left: -700px;
+}
+.accordion-container .textBox {
+  right: -700px;
+}
+@media (max-width: 768px) {
+  .accordion-container .imgBox {
+    left: -370px;
+  }
+  .accordion-container .textBox {
+    right: -370px;
+  }
+}
+.accordion-container.activated .imgBox {
+  left: 0;
+}
+.accordion-container.activated .textBox {
+  right: 0;
+}
+
+/* end accordion */
